@@ -70,7 +70,7 @@ spec:
               name: catenax-managed-identity-wallets-acapy-secrets
               key: acapy-admin-api-key
         - name: CX_BPN
-          value: {{ .Values.wallet.catenaXBpn }}
+          value: {{ .Values.wallet.baseWalletBpn }}
         resources:
           requests:
             cpu: 100m
