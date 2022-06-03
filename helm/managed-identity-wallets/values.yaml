@@ -8,7 +8,7 @@ namespace: "managed-identity-wallets"
 logging:
   exposed: "INFO"
 wallet:
-  catenaXBpn: "BPNL000000000000"
+  baseWalletBpn: "BPNL000000000000"
 acapy:
   imageName: "catenax-ng/product-core-managed-identity-wallets_acapy"
   tag: "0.7.4-rc1"
