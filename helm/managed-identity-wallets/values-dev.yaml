@@ -4,7 +4,7 @@ auth:
   redirectUrl: "https://managed-identity-wallets.dev.demo.catena-x.net/callback"
   realm: "CX-Central"
   role: "access"
-datapoolUrl: "https://catenax-bpdm-dev.germanywestcentral.cloudapp.azure.com"
+datapoolUrl: "https://catenax-bpdm-dev.demo.catena-x.net"
 image:
   registry: "ghcr.io"
   tag: "latest-develop"
