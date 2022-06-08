@@ -3,7 +3,9 @@ auth:
   issuerUrl: "https://centralidp.dev.demo.catena-x.net/auth/realms/CX-Central"
   redirectUrl: "https://managed-identity-wallets.dev.demo.catena-x.net/callback"
   realm: "CX-Central"
-  role: "access"
+  role: "add_wallets"
+  roleMappings: "add_wallets:add_wallets,view_wallets:view_wallets,update_wallets:update_wallets,delete_wallets:delete_wallets"
+  resourceId: "sa-cl5-custodian-internaltest"
 datapoolUrl: "https://catenax-bpdm-dev.demo.catena-x.net"
 image:
   registry: "ghcr.io"

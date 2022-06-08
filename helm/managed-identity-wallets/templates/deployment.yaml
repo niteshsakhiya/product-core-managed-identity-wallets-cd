@@ -46,6 +46,10 @@ spec:
           value: {{ .Values.auth.realm }}
         - name: CX_AUTH_ROLE
           value: {{ .Values.auth.role }}
+        - name: CX_AUTH_ROLE_MAPPINGS
+          value: {{ .Values.auth.roleMappings }}
+        - name: CX_AUTH_RESOURCE_ID
+          value: {{ .Values.auth.resourceId }}
         - name: CX_AUTH_CLIENT_ID
           valueFrom:
             secretKeyRef:

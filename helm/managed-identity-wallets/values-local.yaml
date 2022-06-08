@@ -3,7 +3,8 @@ auth:
   issuerUrl: "http://192.168.205.1:8081/auth/realms/catenax"
   redirectUrl: "http://localhost:8080/callback"
   realm: "catenax"
-  role: "access"
+  roleMappings: "add_wallets:add_wallets,view_wallets:view_wallets,update_wallets:update_wallets,delete_wallets:delete_wallets"
+  resourceId: "ManagedIdentityWallets"
 datapoolUrl: "https://catenax-bpdm-dev.germanywestcentral.cloudapp.azure.com"
 acapy:
   logLevel: "DEBUG"
