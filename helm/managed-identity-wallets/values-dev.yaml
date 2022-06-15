@@ -5,7 +5,7 @@ auth:
   realm: "CX-Central"
   role: "add_wallets"
   roleMappings: "create_wallets:add_wallets,view_wallets:view_wallets,update_wallets:update_wallets,delete_wallets:delete_wallets"
-  resourceId: "sa-cl5-custodian-internaltest"
+  resourceId: "Cl5-CX-Custodian"
 datapoolUrl: "https://catenax-bpdm-dev.demo.catena-x.net"
 image:
   registry: "ghcr.io"
