@@ -19,4 +19,6 @@ certificate:
   host: "managed-identity-wallets.local.demo.catena-x.net"
 image:
   name: "catena-x/managed-identity-wallets"
+postgresql:
+  enabled: false
 isLocal: true

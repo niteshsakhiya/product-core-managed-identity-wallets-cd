@@ -22,7 +22,7 @@ acapypostgresql:
   auth:
     existingSecret: "product-managed-identity-wallets-acapy-postgresql"
 postgresql:
-  enabled: false
+  enabled: true
   auth:
     existingSecret: "postgres-managed-identity-wallets-secret-config"
 app:
