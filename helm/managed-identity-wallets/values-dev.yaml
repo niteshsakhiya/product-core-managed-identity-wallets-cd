@@ -28,7 +28,7 @@ managedIdentityWallets:
     path: "managed-identity-wallets/data/dev/catenax-managed-identity-wallets-secrets"
 postgresql:
   secret:
-    name: "postgres-managed-identity-wallets-secret-config"
+    name: "product-managed-identity-wallets-postgresql"
     path: "managed-identity-wallets/data/dev/postgres-managed-identity-wallets-secret-config"
 acapypostgresql:
   secret:

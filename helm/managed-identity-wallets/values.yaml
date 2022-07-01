@@ -24,7 +24,7 @@ acapypostgresql:
 postgresql:
   enabled: true
   auth:
-    existingSecret: "postgres-managed-identity-wallets-secret-config"
+    existingSecret: "product-managed-identity-wallets-postgresql"
 app:
   version: "0.3.3"
 isLocal: false
