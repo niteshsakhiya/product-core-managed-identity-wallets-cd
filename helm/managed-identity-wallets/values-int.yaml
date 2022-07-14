@@ -3,7 +3,7 @@ auth:
   issuerUrl: "https://centralidp.demo.catena-x.net/auth/realms/CX-Central"
   redirectUrl: "https://managed-identity-wallets.int.demo.catena-x.net/callback"
   realm: "CX-Central"
-  roleMappings: "create_wallets:add_wallets,view_wallets:view_wallets,update_wallets:update_wallets,delete_wallets:delete_wallets"
+  roleMappings: "create_wallets:add_wallets,view_wallets:view_wallets,update_wallets:update_wallets,delete_wallets:delete_wallets,view_wallet:view_wallet,update_wallet:update_wallet"
   resourceId: "Cl5-CX-Custodian"  
 datapoolUrl: "https://catenax-bpdm-int.demo.catena-x.net"
 image:
