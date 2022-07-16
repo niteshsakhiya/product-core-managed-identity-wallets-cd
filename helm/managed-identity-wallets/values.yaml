@@ -10,8 +10,8 @@ logging:
 wallet:
   baseWalletBpn: "BPNL000000000000"
 acapy:
-  imageName: "catenax-ng/product-core-managed-identity-wallets_acapy"
-  tag: "0.7.4-rc1"
+  imageName: "bcgovimages/aries-cloudagent"
+  tag: "py36-1.16-1_0.7.4"
   ledgerUrl: "https://idu.cloudcompass.ca"
   label: "CatenaXIssuer"
   logLevel: "INFO"

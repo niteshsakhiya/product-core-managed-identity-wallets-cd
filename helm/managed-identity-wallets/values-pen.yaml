@@ -1,0 +1,36 @@
+auth:
+  jwksUrl: "https://centralidp-pen.demo.catena-x.net/auth/realms/CX-Central/protocol/openid-connect/certs"
+  issuerUrl: "https://centralidp-pen.demo.catena-x.net/auth/realms/CX-Central"
+  redirectUrl: "https://managed-identity-wallets.pen.demo.catena-x.net/callback"
+  realm: "CX-Central"
+  role: "add_wallets"
+  roleMappings: "create_wallets:add_wallets,view_wallets:view_wallets,update_wallets:update_wallets,delete_wallets:delete_wallets,view_wallet:view_wallet,update_wallet:update_wallet"
+  resourceId: "Cl5-CX-Custodian"
+datapoolUrl: "https://catenax-bpdm-dev.demo.catena-x.net"
+image:
+  registry: "ghcr.io"
+  tag: "latest-develop"
+acapy:
+  logLevel: "DEBUG"
+  ledgerUrl: "https://indy-test.bosch-digital.de/"
+  endpointPort: "8000"
+  endpointUrl: "https://managed-identity-wallets.pen.demo.catena-x.net:8000/"
+  adminPort: "11000"
+  adminUrl: "http://localhost:11000"
+  secret:
+    name: "catenax-managed-identity-wallets-acapy-secrets"
+    path: "managed-identity-wallets/data/pen/catenax-managed-identity-wallets-acapy-secrets"
+certificate:
+  host: "managed-identity-wallets.pen.demo.catena-x.net"
+managedIdentityWallets:
+  secret:
+    name: "catenax-managed-identity-wallets-secrets"
+    path: "managed-identity-wallets/data/pen/catenax-managed-identity-wallets-secrets"
+postgresql:
+  secret:
+    name: "product-managed-identity-wallets-postgresql"
+    path: "managed-identity-wallets/data/pen/postgres-managed-identity-wallets-secret-config"
+acapypostgresql:
+  secret:
+    name: "product-managed-identity-wallets-acapy-postgresql"
+    path: "managed-identity-wallets/data/pen/postgres-acapy-secret-config"

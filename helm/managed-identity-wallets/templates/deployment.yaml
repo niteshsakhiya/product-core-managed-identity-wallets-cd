@@ -85,11 +85,7 @@ spec:
         ports:
         - containerPort: 8080
       - name: catenax-acapy
-        {{- if .Values.image.registry }}
-        image: {{ .Values.image.registry }}/{{ .Values.acapy.imageName }}:{{ .Values.acapy.tag }}
-        {{- else }}
         image: {{ .Values.acapy.imageName }}:{{ .Values.acapy.tag }}
-        {{- end }}
         env:
         - name: WALLET_KEY
           valueFrom:
