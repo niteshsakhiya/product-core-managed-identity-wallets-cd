@@ -1,6 +1,6 @@
 auth:
-  jwksUrl: "https://centralidp-pen.demo.catena-x.net/auth/realms/CX-Central/protocol/openid-connect/certs"
-  issuerUrl: "https://centralidp-pen.demo.catena-x.net/auth/realms/CX-Central"
+  jwksUrl: "https://centralidp-pen.dev.demo.catena-x.net/auth/realms/CX-Central/protocol/openid-connect/certs"
+  issuerUrl: "https://centralidp-pen.dev.demo.catena-x.net/auth/realms/CX-Central"
   redirectUrl: "https://managed-identity-wallets-pen.dev.demo.catena-x.net/callback"
   realm: "CX-Central"
   role: "add_wallets"
