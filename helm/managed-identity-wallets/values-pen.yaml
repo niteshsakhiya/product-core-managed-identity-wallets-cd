@@ -21,7 +21,7 @@ acapy:
     name: "catenax-managed-identity-wallets-acapy-secrets"
     path: "managed-identity-wallets/data/pen/catenax-managed-identity-wallets-acapy-secrets"
 certificate:
-  host: "managed-identity-wallets.pen.demo.catena-x.net"
+  host: "managed-identity-wallets-pen.dev.demo.catena-x.net"
 managedIdentityWallets:
   secret:
     name: "catenax-managed-identity-wallets-secrets"
