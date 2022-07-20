@@ -12,7 +12,7 @@ image:
   tag: "latest-develop"
 acapy:
   logLevel: "DEBUG"
-  ledgerUrl: "https://indy-test.bosch-digital.de/"
+  ledgerUrl: "https://indy-test.idu.network"
   endpointPort: "8000"
   endpointUrl: "https://managed-identity-wallets.dev.demo.catena-x.net:8000/"
   adminPort: "11000"
