@@ -1,7 +1,7 @@
 auth:
   jwksUrl: "https://centralidp-pen.demo.catena-x.net/auth/realms/CX-Central/protocol/openid-connect/certs"
   issuerUrl: "https://centralidp-pen.demo.catena-x.net/auth/realms/CX-Central"
-  redirectUrl: "https://managed-identity-wallets.pen.demo.catena-x.net/callback"
+  redirectUrl: "https://managed-identity-wallets-pen.dev.demo.catena-x.net/callback"
   realm: "CX-Central"
   role: "add_wallets"
   roleMappings: "create_wallets:add_wallets,view_wallets:view_wallets,update_wallets:update_wallets,delete_wallets:delete_wallets,view_wallet:view_wallet,update_wallet:update_wallet"
@@ -14,9 +14,10 @@ acapy:
   logLevel: "DEBUG"
   ledgerUrl: "https://indy-test.bosch-digital.de/"
   endpointPort: "8000"
-  endpointUrl: "https://managed-identity-wallets.pen.demo.catena-x.net:8000/"
+  endpointUrl: "https://managed-identity-wallets-pen.dev.demo.catena-x.net:8000/"
   adminPort: "11000"
   adminUrl: "http://localhost:11000"
+  databaseHost: "product-managed-identity-wallets-pen-acapypostgresql"
   secret:
     name: "catenax-managed-identity-wallets-acapy-secrets"
     path: "managed-identity-wallets/data/pen/catenax-managed-identity-wallets-acapy-secrets"
