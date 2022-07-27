@@ -28,7 +28,7 @@ postgresql:
 datapool:
   grantType: "client_credentials"
   scope: "openid"
-  refreshHour: 23
+  refreshHour: "23"
 app:
   version: "0.4.0"
 isLocal: false
