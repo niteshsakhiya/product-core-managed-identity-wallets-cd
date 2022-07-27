@@ -1,6 +1,6 @@
 image:
   name: "catenax-ng/product-core-managed-identity-wallets_service"
-  tag: "0.3.3"
+  tag: "0.4.5"
 allowEmptyPassword: "\"yes\""
 db:
   jdbcDriver: "org.postgresql.Driver"
@@ -25,6 +25,10 @@ postgresql:
   enabled: true
   auth:
     existingSecret: "product-managed-identity-wallets-postgresql"
+datapool:
+  grantType: "client_credentials"
+  scope: "openid"
+  refreshHour: 23
 app:
-  version: "0.3.3"
+  version: "0.4.0"
 isLocal: false

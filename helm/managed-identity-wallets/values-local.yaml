@@ -5,7 +5,9 @@ auth:
   realm: "catenax"
   roleMappings: "create_wallets:add_wallets,view_wallets:view_wallets,update_wallets:update_wallets,delete_wallets:delete_wallets,view_wallet:view_wallet,update_wallet:update_wallet"
   resourceId: "ManagedIdentityWallets"
-datapoolUrl: "https://catenax-bpdm-dev.germanywestcentral.cloudapp.azure.com"
+datapool:
+  url: "https://catenax-bpdm-dev.demo.catena-x.net"
+  authUrl: "https://centralidp.dev.demo.catena-x.net/auth/realms/CX-Central/protocol/openid-connect/token"
 acapy:
   logLevel: "DEBUG"
   ledgerUrl: "https://indy-test.idu.network"
