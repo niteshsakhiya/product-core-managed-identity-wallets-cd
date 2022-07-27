@@ -74,7 +74,7 @@ spec:
             secretKeyRef:
               name: catenax-managed-identity-wallets-secrets
               key: bpdm-auth-client-secret
-        - name: BPDM_DATAPOOL_URL
+        - name: BPDM_AUTH_GRANT_TYPE
           value: {{ .Values.datapool.grantType }}
         - name: BPDM_AUTH_SCOPE
           value: {{ .Values.datapool.scope }}
