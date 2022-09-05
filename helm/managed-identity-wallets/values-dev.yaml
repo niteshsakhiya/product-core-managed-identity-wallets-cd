@@ -23,6 +23,7 @@ acapy:
   secret:
     name: "catenax-managed-identity-wallets-acapy-secrets"
     path: "managed-identity-wallets/data/dev/catenax-managed-identity-wallets-acapy-secrets"
+  databaseHost: "ftcpro-postgresql-primary.postgres"
 certificate:
   host: "managed-identity-wallets.dev.demo.ftcpro.co"
 managedIdentityWallets:
