@@ -1,15 +1,15 @@
 auth:
-  jwksUrl: "https://centralidp.dev.demo.catena-x.net/auth/realms/CX-Central/protocol/openid-connect/certs"
-  issuerUrl: "https://centralidp.dev.demo.catena-x.net/auth/realms/CX-Central"
-  redirectUrl: "https://managed-identity-wallets.dev.demo.catena-x.net/callback"
+  jwksUrl: "https://centralidp.dev.demo.ftcpro.co/auth/realms/CX-Central/protocol/openid-connect/certs"
+  issuerUrl: "https://centralidp.dev.demo.ftcpro.co/auth/realms/CX-Central"
+  redirectUrl: "https://managed-identity-wallets.dev.demo.ftcpro.co/callback"
   realm: "CX-Central"
   role: "add_wallets"
   roleMappings: "create_wallets:add_wallets,view_wallets:view_wallets,update_wallets:update_wallets,delete_wallets:delete_wallets,view_wallet:view_wallet,update_wallet:update_wallet"
   resourceId: "Cl5-CX-Custodian"
-datapoolUrl: "https://catenax-bpdm-dev.demo.catena-x.net"
+datapoolUrl: "https://partners-pool.dev.demo.ftcpro.co"
 datapool:
-  url: "https://catenax-bpdm-dev.demo.catena-x.net"
-  authUrl: "https://centralidp.dev.demo.catena-x.net/auth/realms/CX-Central/protocol/openid-connect/token"
+  url: "https://partners-pool.dev.demo.ftcpro.co"
+  authUrl: "https://centralidp.dev.demo.ftcpro.co/auth/realms/CX-Central/protocol/openid-connect/token"
 image:
   registry: "ghcr.io"
   tag: "latest-develop"
@@ -17,14 +17,14 @@ acapy:
   logLevel: "DEBUG"
   ledgerUrl: "https://indy-test.idu.network"
   endpointPort: "8000"
-  endpointUrl: "https://managed-identity-wallets.dev.demo.catena-x.net:8000/"
+  endpointUrl: "https://managed-identity-wallets.dev.demo.ftcpro.co:8000/"
   adminPort: "11000"
   adminUrl: "http://localhost:11000"
   secret:
     name: "catenax-managed-identity-wallets-acapy-secrets"
     path: "managed-identity-wallets/data/dev/catenax-managed-identity-wallets-acapy-secrets"
 certificate:
-  host: "managed-identity-wallets.dev.demo.catena-x.net"
+  host: "managed-identity-wallets.dev.demo.ftcpro.co"
 managedIdentityWallets:
   secret:
     name: "catenax-managed-identity-wallets-secrets"
