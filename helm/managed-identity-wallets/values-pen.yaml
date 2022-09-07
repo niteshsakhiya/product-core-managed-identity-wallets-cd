@@ -12,6 +12,15 @@ datapool:
 image:
   registry: "ghcr.io"
   tag: "latest-develop"
+revocation:
+  revocationServiceUrl: http://localhost:8086
+  refreshHour: "3"
+revocationService:
+  port: "8086"
+  httpAccessLog: true
+  baseUrlForCredentialList: "https://managed-identity-wallets.pen.demo.catena-x.net/api/credentials/"
+  minIssueInterval: "2"
+  clientIssuanceApiUrl: "${SSI_SERVICE_URL:-http://localhost:8080}" 
 acapy:
   logLevel: "DEBUG"
   ledgerUrl: "https://indy-test.idu.network"
