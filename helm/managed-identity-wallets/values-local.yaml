@@ -8,6 +8,15 @@ auth:
 datapool:
   url: "https://catenax-bpdm-dev.demo.catena-x.net"
   authUrl: "https://centralidp.dev.demo.catena-x.net/auth/realms/CX-Central/protocol/openid-connect/token"
+revocation:
+  revocationServiceUrl: http://localhost:8086
+  refreshHour: "3"
+revocationService:
+  port: "8086"
+  httpAccessLog: true
+  baseUrlForCredentialList: "https://managed-identity-wallets.dev.demo.catena-x.net/api/credentials/"
+  minIssueInterval: "2"
+  clientIssuanceApiUrl: "${SSI_SERVICE_URL:-http://localhost:8080}"  
 acapy:
   logLevel: "DEBUG"
   ledgerUrl: "https://indy-test.idu.network"
