@@ -113,7 +113,7 @@ spec:
         - name: QUARKUS_HTTP_PORT
           value: {{ .Values.revocationService.port | quote }}
         - name: QUARKUS_HTTP_ACCESS_LOG_ENABLED
-          value: {{ .Values.revocationService.httpAccessLog | default "false" }}
+          value: {{ .Values.revocationService.httpAccessLog | default "false" | quote }}
         - name: QUARKUS_DATASOURCE_JDBC_URL
           valueFrom:
             secretKeyRef:
@@ -124,7 +124,7 @@ spec:
         - name: REVOCATION_MIN_ISSUE_INTERVAL
           value: {{ .Values.revocationService.minIssueInterval | quote }}
         - name: QUARKUS_REST_CLIENT_SSI_ISSUANCE_API_URL
-          value: {{ .Values.revocationService.clientIssuanceApiUrl }}
+          value: {{ .Values.revocationService.clientIssuanceApiUrl | quote }}
         resources:
           requests:
             cpu: 100m
