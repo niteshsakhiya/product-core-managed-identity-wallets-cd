@@ -111,7 +111,7 @@ spec:
         imagePullPolicy: Always
         env:
         - name: QUARKUS_HTTP_PORT
-          value: {{ .Values.revocationService.port }}
+          value: {{ .Values.revocationService.port | quote }}
         - name: QUARKUS_HTTP_ACCESS_LOG_ENABLED
           value: {{ .Values.revocationService.httpAccessLog | default "false" }}
         - name: QUARKUS_DATASOURCE_JDBC_URL
@@ -122,7 +122,7 @@ spec:
         - name: REVOCATION_BASE_URL
           value: {{ .Values.revocationService.baseUrlForCredentialList }}
         - name: REVOCATION_MIN_ISSUE_INTERVAL
-          value: {{ .Values.revocationService.minIssueInterval | quote}}
+          value: {{ .Values.revocationService.minIssueInterval | quote }}
         - name: QUARKUS_REST_CLIENT_SSI_ISSUANCE_API_URL
           value: {{ .Values.revocationService.clientIssuanceApiUrl }}
         resources:
